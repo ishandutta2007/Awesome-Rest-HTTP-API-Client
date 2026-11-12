@@ -28,6 +28,7 @@
   <a href="#-open-source-software">Open-Source Clients</a> •
   <a href="#-feature-matrix--comparison-at-a-glance">Feature Matrix</a> •
   <a href="#-star-history">Star History</a> •
+  <a href="#-support">Support</a> •
   <a href="#-contributing">Contributing</a>
 </p>
 
@@ -55,6 +56,7 @@
   - [13. RESTer](#13-rester)
 - [📊 Feature Matrix & Comparison at a Glance](#-feature-matrix--comparison-at-a-glance)
 - [📈 Star History](#-star-history)
+- [💖 Support](#-support)
 - [🤝 Contributing](#-contributing)
 - [📄 License](#-license)
 
@@ -219,6 +221,23 @@ Curated open-source REST & HTTP API clients, ordered descending by community pop
 ## 📈 Star History
 
 [![Star History Chart](https://www.star-history.com/svg?repos=ishandutta2007/Awesome-Rest-HTTP-API-Client&type=da&&legend=top-left)](https://www.star-history.com/#ishandutta2007/Awesome-Rest-HTTP-API-Client&type=date&legend=top-left)
+
+---
+
+## 💖 Support
+
+Thank you for exploring this curated directory! If you find this repository valuable for your daily API development, testing, and debugging workflows, please consider supporting the project:
+
+- ⭐ **Star this repository** to help others discover it across GitHub.
+- 🍴 **Fork and contribute** by adding new tools or updating documentation.
+- 📢 **Share the project** with your team, fellow developers, or on social media.
+- ☕ **Buy me a coffee / Sponsor**: If you'd like to support ongoing maintenance and new developer resources, consider sponsoring via the [GitHub Sponsors Dashboard](https://github.com/sponsors/ishandutta2007).
+
+<p align="center">
+  <a href="https://github.com/sponsors/ishandutta2007">
+    <img src="https://img.shields.io/badge/Sponsor%20me%20on-GitHub%20Sponsors-ea4aaa?style=for-the-badge&logo=github-sponsors&logoColor=white" alt="Sponsor on GitHub" />
+  </a>
+</p>
 
 ---
 
