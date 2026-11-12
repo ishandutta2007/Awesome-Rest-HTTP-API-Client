@@ -1,127 +1,242 @@
 # Awesome-Rest-HTTP-API-Client
 
-# Awesome REST & HTTP API Client
+<div align="center">
 
-> A curated list of top REST and HTTP API Client platforms — both SaaS/Hosted commercial solutions and open-source alternatives for designing, testing, and automating API requests.
-> 🌟 Star this repo if you find it useful! 🌟
+<a href="https://github.com/ishandutta2007/Awesome-Rest-HTTP-API-Client">
+  <img src="./assets/banner.svg" alt="Awesome REST &amp; HTTP API Client Banner" width="100%" />
+</a>
+
+<br/>
+
+<a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
+<a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+<a href="https://github.com/ishandutta2007/Awesome-Rest-HTTP-API-Client/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Rest-HTTP-API-Client?style=social&color=white" alt="Repo Stars" /></a>
+<a href="https://github.com/ishandutta2007/Awesome-Rest-HTTP-API-Client/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Rest-HTTP-API-Client?style=social&color=white" alt="Repo Forks" /></a>
+<a href="https://github.com/ishandutta2007/Awesome-Rest-HTTP-API-Client/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-CC0_1.0-blue.svg?style=flat-square" alt="License: CC0-1.0" /></a>
+<a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+
+<br/><br/>
+
+<p align="center">
+  <strong>🚀 A curated directory of top REST &amp; HTTP API clients, testing suites, GUI workbenches, and CLI automation tools.</strong><br/>
+  Discover top-tier SaaS API ecosystems and battle-tested open-source clients for REST, GraphQL, gRPC, WebSockets, and SSE.
+</p>
+
+<p align="center">
+  <a href="#-sector-overview--market-dynamics">Sector Overview</a> •
+  <a href="#-saas--hosted-platforms">SaaS Platforms</a> •
+  <a href="#-open-source-software">Open-Source Clients</a> •
+  <a href="#-feature-matrix--comparison-at-a-glance">Feature Matrix</a> •
+  <a href="#-star-history">Star History</a> •
+  <a href="#-contributing">Contributing</a>
+</p>
+
+</div>
 
 ---
 
 ## 📋 Table of Contents
 
-- [SaaS / Hosted Platforms](#-saas--hosted-platforms)
-  - [Postman API Client](#postman-api-client)
-  - [Insomnia](#insomnia)
-  - [Thunder Client](#thunder-client)
-  - [Paw (RapidAPI)](#paw-rapidapi)
-  - [Fiddler](#fiddler)
-- [Open-Source Software](#-open-source-software)
-  - [Bruno](#bruno)
-  - [Hoppscotch](#hoppscotch)
-  - [Yaak](#yaak)
-  - [HTTPie](#httpie)
-  - [RESTer](#rester)
-  - [API Dash](#api-dash)
-  - [Scalar API Client](#scalar-api-client)
-- [Comparison at a Glance](#-comparison-at-a-glance)
-- [Contributing](#-contributing)
+- [🌐 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [🏢 SaaS / Hosted Platforms](#-saas--hosted-platforms)
+- [💻 Open-Source Software](#-open-source-software)
+  - [1. Hoppscotch](#1-hoppscotch)
+  - [2. Bruno](#2-bruno)
+  - [3. Insomnia](#3-insomnia)
+  - [4. HTTPie CLI](#4-httpie-cli)
+  - [5. Yaak](#5-yaak)
+  - [6. Scalar API Client](#6-scalar-api-client)
+  - [7. REST Client for VS Code](#7-rest-client-for-vs-code)
+  - [8. rest-client (Ruby)](#8-rest-client-ruby)
+  - [9. API Dash](#9-api-dash)
+  - [10. Restfox](#10-restfox)
+  - [11. Firecamp](#11-firecamp)
+  - [12. Milkman](#12-milkman)
+  - [13. RESTer](#13-rester)
+- [📊 Feature Matrix & Comparison at a Glance](#-feature-matrix--comparison-at-a-glance)
+- [📈 Star History](#-star-history)
+- [🤝 Contributing](#-contributing)
+- [📄 License](#-license)
 
 ---
 
-## 🟦 SaaS / Hosted Platforms
+## 🌐 Sector Overview & Market Dynamics
 
-Commercial, cloud-hosted REST and HTTP API Client platforms. These are not fully open-source but are included as reference points for feature comparison.
+The global API management and testing tools market is estimated at approximately **$5.1 billion to $6.8 billion** and is projected to expand at a compound annual growth rate (CAGR) exceeding **25%** through 2030, driven by microservices architectures, AI-agent integrations, and cloud-native workflows. 
 
-### Postman API Client
-**Type:** Full API platform with cloud workspaces and native Git
-Postman is the most widely used API client, with a free tier for individuals that includes the client, mock servers, and native Git on every plan [citation:8]. It offers cloud workspaces at the center of the product, though its lightweight API Client can send requests offline. Pricing starts at $9/month for Solo and $19/user/month for Team (annual) [citation:8]. **Trade-off:** Cloud-first architecture means request data touches vendor servers, and some teams find the platform increasingly heavy for simple request testing.
-
-### Insomnia
-**Type:** Mature desktop client with strong GraphQL support
-Insomnia (owned by Kong) is the most established open-source desktop client, with a free tier that includes unlimited Git Sync projects for up to 3 users, unlimited local and cloud projects, and 1,000 mock-server requests per month [citation:1]. It covers REST, GraphQL, gRPC, WebSockets, and SSE in one app, with GraphQL schema introspection and autocompletion being a clear strength [citation:1]. Pro is $12/user/month and lifts the user cap [citation:1]. **Trade-off:** Cloud-first and Kong-owned, which makes some privacy-conscious teams nervous; the 3-user free ceiling is a real limitation for growing teams [citation:1].
-
-### Thunder Client
-**Type:** Lightweight REST client inside VS Code and JetBrains
-Thunder Client runs as an extension inside VS Code (and now JetBrains), keeping requests next to your code with no separate window [citation:1]. The free tier covers solo use with local collections. Paid plans start at $3/user/month for Starter (adding team sync, CLI, and WebSocket/SSE/gRPC support) and $7/user/month for Business [citation:1]. **Trade-off:** Team features and advanced protocols are paywalled, and a past shift of previously-free features behind a paid license annoyed part of the community [citation:1].
-
-### Paw (RapidAPI)
-**Type:** Native macOS API client with visual editor
-Paw is a native macOS API client known for its polished interface and visual request builder, with support for REST, GraphQL, and WebSocket. It is often compared alongside Postman and Insomnia for Mac-centric developers wanting a native experience rather than Electron.
-
-### Fiddler
-**Type:** Web debugging proxy with API inspection
-Fiddler (Telerik) is a web debugging proxy that captures HTTP/HTTPS traffic, making it useful for inspecting API requests and responses alongside a dedicated client. It is positioned for debugging network behavior rather than as a primary API client, but it complements request testing workflows.
+Market dynamics exhibit a **moderately concentrated, bifurcated structure**: enterprise cloud workspaces remain dominated by category leaders like Postman and Kong, yet increasing privacy requirements and vendor lock-in pushback have triggered significant **open-source fragmentation**, sparking rapid adoption of Git-native, offline-first, and self-hosted developer tools.
 
 ---
 
-## 🟩 Open-Source Software
+## 🏢 SaaS / Hosted Platforms
 
-Self-hosted, community-driven REST and HTTP API Client tools. The open-source ecosystem has matured significantly, with strong options for offline-first, Git-native, and browser-based workflows.
+Below is a detailed breakdown of leading commercial and hosted REST/HTTP API client platforms, sorted descending by company scale (market valuation / parent company revenue).
 
-### Bruno
-**Stack:** JavaScript / Electron | **License:** MIT
-Bruno is a Git-friendly, offline-first API client that stores every request as a plain-text file (YAML in the OpenCollection format) in your repository, so collections are versioned, diffed, and reviewed like code [citation:5][citation:12]. It works fully offline and needs no account [citation:5]. The free client is complete; Pro ($6/user/month) adds in-app Git integration, an unlimited collection runner, and code generation, and Ultimate ($11) adds SSO, SCIM, and audit logs [citation:3][citation:10]. It supports REST, GraphQL, SOAP, gRPC, and WebSocket [citation:3]. **Trade-off:** `.bru` is Bruno's own format (though v4 uses OpenCollection YAML), so collections are portable as text but not as OpenAPI; some Git workflow features sit in paid tiers [citation:3].
-
-### Hoppscotch
-**Stack:** TypeScript / Vue | **License:** MIT
-Hoppscotch is the most-starred open-source API client (80.5k GitHub stars), starting as a browser-based tool and now shipping desktop apps, a CLI, and a self-hostable server [citation:3][citation:15]. It covers the widest protocol range on this list: REST, GraphQL, WebSocket, SSE, Socket.IO, and MQTT [citation:3]. The cloud Free plan includes unlimited workspaces, collections, and requests; Organization is $6/user/month [citation:15]. Self-hosting is available from GitHub [citation:15]. **Trade-off:** Browser-based requests to local or private APIs can hit CORS, requiring a browser extension or proxy; fully offline use is not published, and there is no published gRPC support [citation:8][citation:15].
-
-### Yaak
-**Stack:** Tauri / Rust / React | **License:** MIT (source) / Commercial (binaries)
-Yaak comes from Greg Allen, who originally built Insomnia, and is designed as a fast, local-only desktop client with zero telemetry [citation:1]. It runs fully offline, stores data locally, includes no 3rd-party tracking libraries, and supports REST, GraphQL, gRPC, WebSockets, and SSE [citation:6]. The source is MIT, but **commercial use of prebuilt binaries requires a license**: $79/year for an individual, $399 for a lifetime license, or $149/user/year for Business [citation:1][citation:6]. A 30-day trial is available [citation:6]. **Trade-off:** The commercial-use license trips people up—Yaak is free to learn with, but if you use it at work, you're expected to pay, making it less "free" than Bruno or Hoppscotch in practice [citation:1].
-
-### HTTPie
-**Stack:** Python / CLI | **License:** BSD-3-Clause
-HTTPie is a terminal HTTP client whose syntax documents itself: `http POST api.example.com name=John` [citation:8]. The CLI is open source under BSD 3-Clause, with 38.6k GitHub stars [citation:3]. Desktop and web apps are in public beta, with separate licensing [citation:8]. It is positioned for debugging by hand in a shell and scripting one-off requests where a GUI slows you down [citation:8]. **Trade-off:** The apps carry a beta label and no published price; plan around the CLI [citation:8].
-
-### RESTer
-**Stack:** Browser extension (Firefox / Chrome) | **License:** MIT
-RESTer is a browser extension for Firefox and Chrome that performs HTTP requests with any method, URL, body, and custom headers, with saved requests organized in collections [citation:7][citation:14]. It supports Basic and OAuth2 authentication, placeholders in saved requests, and keyboard shortcuts. All data is stored exclusively on the user's machine [citation:7]. **Trade-off:** It is a browser extension rather than a full desktop client, with limited protocol support (HTTP only) and no CLI for automation [citation:3].
-
-### API Dash
-**Stack:** Flutter | **License:** Apache-2.0
-API Dash is an open-source, cross-platform API client built with Flutter, supporting macOS, Windows, Linux, Android, and iOS [citation:9][citation:10]. It can create and customize HTTP and GraphQL requests, visually inspect responses, and generate API integration code. It is positioned as a lightweight alternative to Postman and Insomnia, with 2,900 GitHub stars [citation:9][citation:10]. **Trade-off:** A smaller ecosystem than Bruno or Hoppscotch, and less mature automation/CLI tooling.
-
-### Scalar API Client
-**Stack:** TypeScript | **License:** MIT
-Scalar API Client is an offline-first API client built on OpenAPI, available for Windows, macOS, Linux, and in the browser [citation:3]. It is the same client that opens when a reader clicks "Test Request" in a Scalar API reference, so requests in docs and the desktop app share one tool. OpenAPI 3.x is the client's native format, and it imports Postman collections and cURL commands [citation:3]. **Trade-off:** Scalar is REST-focused; if your daily work is GraphQL, gRPC, WebSockets, or MQTT, Hoppscotch, Insomnia, Yaak, or Bruno cover more protocols today [citation:3].
+| Platform | Company Scale (Valuation / Revenue) | Starting Paid Pricing | Free Tier / Trial Limits | Primary Protocols & Features |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Fiddler](https://www.telerik.com/fiddler)** | **$3.78B Market Cap / ~$700M Rev** *(Progress Software, NASDAQ: PRGS)* | **$12 / user / month** *(Fiddler Everywhere, billed annually at $144/yr)* | **10-day full-featured free trial**; Free tier limited to legacy classic Windows desktop viewer with local inspection | Deep HTTP/HTTPS web debugging proxy, traffic capture, API payload replay, TLS inspection, mock responses |
+| **[Postman API Client](https://www.postman.com/)** | **$5.60B Valuation** *(Valued at $5.6B in Series D round)* | **$14 / user / month** *(Basic tier, billed annually at $168/user/yr; or $19 billed monthly)* | **Free forever plan**: Up to 3 team members, 25 collection runner runs/mo, 1,000 mock server calls/mo, and 1,000 cloud monitor runs/mo | Cloud & desktop API client workspaces, automated testing, mock servers, documentation publishing, native Git sync |
+| **[Insomnia (Kong)](https://insomnia.rest/)** | **$2.00B Valuation** *(Kong Inc. Series E valuation)* | **$12 / user / month** *(Pro tier, billed annually)* | **Free forever plan**: 1 cloud project, up to 3 collaborators per Git Sync project, unlimited local storage, 1,000 mock server requests/mo | REST, GraphQL (autocomplete & introspection), gRPC, WebSockets, SSE, end-to-end encryption, Git sync |
+| **[Paw (RapidAPI)](https://paw.cloud/)** | **$1.00B Valuation** *(RapidAPI Unicorn Series D valuation)* | **$49.99 one-time license** *(Individual Mac standalone; or via RapidAPI Pro from $10/user/mo)* | **14-day unrestricted free trial** on macOS standalone version with full export/import capabilities | Native macOS client, visual request composer, dynamic environments, code generation in 15+ languages, GraphQL/REST |
+| **[Thunder Client](https://www.thunderclient.com/)** | **Bootstrapped / ~$2M - $5M ARR** *(Independent specialized developer tool)* | **$3 / user / month** *(Starter tier, billed annually; or $3.50 monthly)* | **Free forever plan**: Unlimited local requests, unlimited personal collections, environment variables for single user | Embedded VS Code & JetBrains extension, zero desktop window switching, local Git-friendly JSON files, script runners |
 
 ---
 
-## 📊 Comparison at a Glance
+## 💻 Open-Source Software
 
-| Software | License | Stack | Protocols | Offline-First | Git-Native | Best For |
-|----------|---------|-------|-----------|---------------|------------|----------|
-| **Postman** | Proprietary | Cloud/Desktop | REST, GraphQL, gRPC | (Limited) | ✅ Native | Full API platform |
-| **Insomnia** | Apache-2.0 | Electron | REST, GraphQL, gRPC, WS, SSE | (Partial) | ✅ (Free 3 users) | GraphQL-heavy work |
-| **Thunder Client** | Proprietary | VS Code/JetBrains | REST (paid: WS, SSE, gRPC) | ✅ (Local) | (Paid) | VS Code users |
-| **Bruno** | MIT | Electron | REST, GraphQL, SOAP, gRPC, WS | ✅ | ✅ Plain files | Git-native + offline |
-| **Hoppscotch** | MIT | Vue/TypeScript | REST, GraphQL, WS, SSE, MQTT | (No) | ❌ | Multi-protocol + browser |
-| **Yaak** | MIT (source) | Tauri/Rust | REST, GraphQL, gRPC, WS, SSE | ✅ | ✅ Local mirror | Privacy-first desktop |
-| **HTTPie** | BSD-3-Clause | Python/CLI | HTTP | ✅ (CLI) | ❌ | Terminal scripting |
-| **RESTer** | MIT | Browser extension | HTTP | ✅ (Local) | ❌ | Quick browser requests |
-| **API Dash** | Apache-2.0 | Flutter | HTTP, GraphQL | ✅ | ❌ | Cross-platform (mobile) |
-| **Scalar** | MIT | TypeScript | REST | ✅ | (OpenAPI) | OpenAPI-native teams |
+Curated open-source REST & HTTP API clients, ordered descending by community popularity (**GitHub Star Counts** ⭐).
+
+### 1. Hoppscotch
+<a href="https://github.com/hoppscotch/hoppscotch/stargazers"><img src="https://img.shields.io/github/stars/hoppscotch/hoppscotch?style=social&color=white" alt="Hoppscotch Stars"/></a>
+
+- **Repository:** [hoppscotch/hoppscotch](https://github.com/hoppscotch/hoppscotch) 🌟
+- **Stack:** Vue.js, TypeScript, PWA, Node.js | **License:** MIT
+- **Description:** A lightweight, web-based and desktop API development ecosystem that serves as an open-source alternative to Postman. It supports real-time communication protocols out of the box.
+- **Key Features:** Multi-protocol support (REST, GraphQL, WebSockets, Server-Sent Events, MQTT, Socket.IO), browser extension proxying, team collaboration, self-hostable Docker deployments, and keyboard-first UI navigation.
+
+### 2. Bruno
+<a href="https://github.com/usebruno/bruno/stargazers"><img src="https://img.shields.io/github/stars/usebruno/bruno?style=social&color=white" alt="Bruno Stars"/></a>
+
+- **Repository:** [usebruno/bruno](https://github.com/usebruno/bruno) 🌟
+- **Stack:** JavaScript, Electron, Node.js | **License:** MIT
+- **Description:** An offline-first, Git-friendly desktop API client that stores collections directly in your repo using plain text files (`.bru` / OpenCollection format) without vendor cloud lock-in.
+- **Key Features:** True Git synchronization via normal developer branches and PRs, 100% offline functionality, zero cloud sync or external servers, scriptable test assertions, and cross-platform desktop installers.
+
+### 3. Insomnia
+<a href="https://github.com/Kong/insomnia/stargazers"><img src="https://img.shields.io/github/stars/Kong/insomnia?style=social&color=white" alt="Insomnia Stars"/></a>
+
+- **Repository:** [Kong/insomnia](https://github.com/Kong/insomnia) 🌟
+- **Stack:** Electron, React, TypeScript | **License:** Apache-2.0
+- **Description:** A mature, open-source desktop REST, GraphQL, gRPC, and WebSocket testing suite designed by Kong with visual request chaining and schema exploration.
+- **Key Features:** Industry-leading GraphQL schema introspection and autocompletion, gRPC protobuf exploration, end-to-end encrypted project sync, plugins ecosystem, and automated unit testing.
+
+### 4. HTTPie CLI
+<a href="https://github.com/httpie/cli/stargazers"><img src="https://img.shields.io/github/stars/httpie/cli?style=social&color=white" alt="HTTPie Stars"/></a>
+
+- **Repository:** [httpie/cli](https://github.com/httpie/cli) 🌟
+- **Stack:** Python | **License:** BSD-3-Clause
+- **Description:** A modern, user-friendly command-line HTTP client engineered for the API era, providing intuitive syntax, JSON formatting, syntax highlighting, and session persistence.
+- **Key Features:** Expressive natural syntax (`http POST example.com hello=world`), native JSON parsing, formatted terminal colorization, persistent sessions, authentication plugins, and stream handling.
+
+### 5. Yaak
+<a href="https://github.com/mountain-loop/yaak/stargazers"><img src="https://img.shields.io/github/stars/mountain-loop/yaak?style=social&color=white" alt="Yaak Stars"/></a>
+
+- **Repository:** [mountain-loop/yaak](https://github.com/mountain-loop/yaak) 🌟
+- **Stack:** Rust, Tauri, React, TypeScript | **License:** MIT (Source Available)
+- **Description:** An ultra-fast, lightweight desktop API client built with Rust and Tauri by the original creator of Insomnia, engineered for privacy, speed, and minimal memory footprint.
+- **Key Features:** Native rendering without Electron overhead, support for REST, GraphQL, gRPC, and WebSockets, zero telemetry or tracking, automatic dark mode, and local JSON database storage.
+
+### 6. Scalar API Client
+<a href="https://github.com/scalar/scalar/stargazers"><img src="https://img.shields.io/github/stars/scalar/scalar?style=social&color=white" alt="Scalar Stars"/></a>
+
+- **Repository:** [scalar/scalar](https://github.com/scalar/scalar) 🌟
+- **Stack:** Vue.js, TypeScript, OpenAPI | **License:** MIT
+- **Description:** An offline-first, modern REST API testing client tightly integrated with OpenAPI/Swagger specifications, interactive documentation references, and mock servers.
+- **Key Features:** First-class OpenAPI 3.0 & 3.1 compatibility, automatic client generation in dozens of languages, offline browser and desktop apps, Postman and cURL importing.
+
+### 7. REST Client for VS Code
+<a href="https://github.com/Huachao/vscode-restclient/stargazers"><img src="https://img.shields.io/github/stars/Huachao/vscode-restclient?style=social&color=white" alt="REST Client Stars"/></a>
+
+- **Repository:** [Huachao/vscode-restclient](https://github.com/Huachao/vscode-restclient) 🌟
+- **Stack:** TypeScript, VS Code API | **License:** MIT
+- **Description:** Popular Visual Studio Code extension that allows developers to write, invoke, and inspect HTTP requests directly within plain `.http` or `.rest` files inside their editor.
+- **Key Features:** Version-controllable RFC 7230 HTTP request scripts, multi-environment variable support, response preview with syntax highlighting, cURL code generation, and GraphQL support.
+
+### 8. rest-client (Ruby)
+<a href="https://github.com/rest-client/rest-client/stargazers"><img src="https://img.shields.io/github/stars/rest-client/rest-client?style=social&color=white" alt="rest-client Stars"/></a>
+
+- **Repository:** [rest-client/rest-client](https://github.com/rest-client/rest-client) 🌟
+- **Stack:** Ruby | **License:** MIT
+- **Description:** A simple, reliable HTTP and REST client library for Ruby, inspired by microframework syntax for executing API requests programmatically.
+- **Key Features:** Clean DSL for GET, POST, PUT, DELETE operations, automatic cookie handling, payload streaming, raw and JSON responses, and simple CLI utility executable.
+
+### 9. API Dash
+<a href="https://github.com/foss42/apidash/stargazers"><img src="https://img.shields.io/github/stars/foss42/apidash?style=social&color=white" alt="API Dash Stars"/></a>
+
+- **Repository:** [foss42/apidash](https://github.com/foss42/apidash) 🌟
+- **Stack:** Flutter, Dart | **License:** Apache-2.0
+- **Description:** A beautiful, lightweight, cross-platform API client built with Flutter supporting macOS, Windows, Linux, Android, and iOS for frictionless testing on mobile and desktop.
+- **Key Features:** AI-assisted request generation, clean Flutter UI, multi-language code generator (Dart, Python, Kotlin, cURL, JS), GraphQL queries, and zero background analytics.
+
+### 10. Restfox
+<a href="https://github.com/flawiddsouza/Restfox/stargazers"><img src="https://img.shields.io/github/stars/flawiddsouza/Restfox?style=social&color=white" alt="Restfox Stars"/></a>
+
+- **Repository:** [flawiddsouza/Restfox](https://github.com/flawiddsouza/Restfox) 🌟
+- **Stack:** Vue.js, Electron, WebExtensions | **License:** MIT
+- **Description:** An offline-first, minimalistic HTTP and WebSocket testing client available as a web app, desktop application, and browser extension.
+- **Key Features:** Simple Postman-like interface with zero signup required, browser storage or local folder persistence, WebSocket inspection, and Postman collection import/export.
+
+### 11. Firecamp
+<a href="https://github.com/firecamp-dev/firecamp/stargazers"><img src="https://img.shields.io/github/stars/firecamp-dev/firecamp?style=social&color=white" alt="Firecamp Stars"/></a>
+
+- **Repository:** [firecamp-dev/firecamp](https://github.com/firecamp-dev/firecamp) 🌟
+- **Stack:** TypeScript, Electron, Next.js | **License:** Open Source
+- **Description:** A developer-first open-source API development workbench built as a comprehensive multi-protocol alternative to Postman and Insomnia.
+- **Key Features:** Simultaneous multi-protocol support for REST, GraphQL, WebSocket, and Socket.IO, visual request composer, team sync, and modular testing runners.
+
+### 12. Milkman
+<a href="https://github.com/warmuuh/milkman/stargazers"><img src="https://img.shields.io/github/stars/warmuuh/milkman?style=social&color=white" alt="Milkman Stars"/></a>
+
+- **Repository:** [warmuuh/milkman](https://github.com/warmuuh/milkman) 🌟
+- **Stack:** Java, JavaFX | **License:** MIT
+- **Description:** An extensible request/response workbench designed for fast startup and low resource consumption, powered by a modular plugin architecture.
+- **Key Features:** Fast JavaFX native UI, plugin support for HTTP, SQL, Cassandra, gRPC, and GraphQL, sync via Git repositories, and low memory consumption.
+
+### 13. RESTer
+<a href="https://github.com/frigus02/RESTer/stargazers"><img src="https://img.shields.io/github/stars/frigus02/RESTer?style=social&color=white" alt="RESTer Stars"/></a>
+
+- **Repository:** [frigus02/RESTer](https://github.com/frigus02/RESTer) 🌟
+- **Stack:** JavaScript, WebExtensions | **License:** MIT
+- **Description:** A lightweight, privacy-focused browser extension for Firefox and Chrome that lets developers test REST APIs directly inside browser tabs.
+- **Key Features:** Local browser storage, OAuth 2.0 and Basic Auth support, environment parameter replacement, no remote server relay, and instant response viewing.
+
+---
+
+## 📊 Feature Matrix & Comparison at a Glance
+
+| Client | Type | Community Stars | Supported Protocols | Offline-First | Git-Native | Best Use Case |
+| :--- | :--- | :--- | :--- | :---: | :---: | :--- |
+| **Hoppscotch** | Open-Source | ~80.8k ⭐ | REST, GraphQL, WS, SSE, MQTT | ⚠️ Partial | ❌ Cloud/Self-Host | Multi-protocol browser & web app testing |
+| **Bruno** | Open-Source | ~48.4k ⭐ | REST, GraphQL, gRPC, WS, SOAP | ✅ Yes | ✅ 100% Files | Git-versioned collections & offline safety |
+| **Insomnia** | Open-Source Core | ~40.1k ⭐ | REST, GraphQL, gRPC, WS, SSE | ⚠️ Partial | ✅ Team Git Sync | GraphQL schemas & enterprise API design |
+| **HTTPie CLI** | Open-Source | ~38.7k ⭐ | HTTP/REST | ✅ Yes | ❌ Scriptable | Rapid terminal debugging & CLI scripts |
+| **Yaak** | Open-Source | ~19.5k ⭐ | REST, GraphQL, gRPC, WS, SSE | ✅ Yes | ✅ Local DB | Fast, privacy-focused desktop workbench |
+| **Scalar** | Open-Source | ~16.4k ⭐ | REST / OpenAPI | ✅ Yes | ⚠️ Spec-driven | OpenAPI 3.x-native documentation & testing |
+| **REST Client (VSCode)** | Open-Source | ~6.1k ⭐ | HTTP, REST, GraphQL | ✅ Yes | ✅ Plain `.http` | IDE-integrated in-repo request execution |
+| **rest-client** | Open-Source | ~5.2k ⭐ | HTTP/REST | ✅ Yes | ❌ Library | Ruby programmatic scripts & automated tests |
+| **API Dash** | Open-Source | ~3.0k ⭐ | REST, GraphQL | ✅ Yes | ❌ Local export | Cross-platform desktop & mobile testing |
+| **Restfox** | Open-Source | ~2.8k ⭐ | REST, WebSockets | ✅ Yes | ⚠️ Local folder | Quick no-login browser & desktop client |
+| **Firecamp** | Open-Source | ~2.6k ⭐ | REST, GraphQL, WS, Socket.IO | ⚠️ Partial | ⚠️ Cloud/Local | Multi-protocol collaboration workbench |
+| **Milkman** | Open-Source | ~1.4k ⭐ | HTTP, gRPC, SQL, GraphQL | ✅ Yes | ✅ Git plugin | Plugin-extensible developer workbench |
+| **RESTer** | Open-Source | ~390 ⭐ | HTTP/REST | ✅ Yes | ❌ Extension | Lightweight in-browser ad-hoc debugging |
+| **Postman** | SaaS / Commercial | N/A (Proprietary) | REST, GraphQL, gRPC, WS | ⚠️ Cloud-first | ✅ Cloud & Git | Enterprise teams needing full API lifecycle |
+| **Fiddler Everywhere** | SaaS / Commercial | N/A (Proprietary) | HTTP, HTTPS, WebSockets | ✅ Local Proxy | ❌ Proprietary | Network traffic inspection & TLS debugging |
+| **Paw (RapidAPI)** | Commercial | N/A (Proprietary) | REST, GraphQL, WebSockets | ✅ Yes | ⚠️ RapidAPI Sync | Native macOS design & visual composing |
+| **Thunder Client** | Freemium Plugin | N/A (Proprietary) | REST (Paid: WS, gRPC) | ✅ Local | ⚠️ Paid Feature | Embedded VS Code lightweight testing |
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://www.star-history.com/svg?repos=ishandutta2007/Awesome-Rest-HTTP-API-Client&type=da&&legend=top-left)](https://www.star-history.com/#ishandutta2007/Awesome-Rest-HTTP-API-Client&type=date&legend=top-left)
 
 ---
 
 ## 🤝 Contributing
 
-Contributions are welcome! If you know of an open-source REST or HTTP API Client tool that should be listed here, please open a pull request with:
+Contributions, new tools, and updates are very welcome! 🎉
 
-- Project name and URL
-- Brief description (1–2 sentences)
-- Stack and license
-- Why it stands out
-
-Please ensure the project is actively maintained (releases within the last 12 months) and genuinely open-source. Note that the open-source ecosystem **splits** between **Git-native offline clients** (Bruno, Yaak) that prioritize data ownership and version control, **multi-protocol browser/desktop clients** (Hoppscotch, Insomnia) that cover the widest range of API types, **terminal/CLI tools** (HTTPie) for scripting, and **browser extensions** (RESTer) for quick ad-hoc requests. **Bruno** is the strongest choice for teams wanting Git to be the collaboration layer without vendor lock-in [citation:3][citation:5], while **Hoppscotch** offers unmatched protocol breadth and a self-hostable option [citation:15]. **Yaak** is notable for being fully local with zero telemetry, though its commercial-use license is a practical consideration [citation:1][citation:6].
+1. Fork this repository.
+2. Add your tool to the appropriate section maintaining chronological or star-count sorting.
+3. Ensure the project is actively maintained and provides a clear description, GitHub link, stack, and license.
+4. Submit a Pull Request with a clear title and description.
 
 ---
 
 ## 📄 License
 
-This list is released under CC0 1.0 Universal (Public Domain). The software projects listed retain their respective licenses.
+This collection is licensed under [Creative Commons Zero v1.0 Universal](LICENSE) (Public Domain Dedication). Each individual project listed retains its respective open-source or commercial license.
 
----
-
-⭐ **If this list helped you discover a useful tool, please star the repo!** ⭐
+<div align="center">
+  <sub>Made with ❤️ for the global developer community. If you found this list helpful, please give it a ⭐!</sub>
+</div>
