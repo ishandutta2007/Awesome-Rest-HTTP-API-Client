@@ -86,7 +86,7 @@ Below is a detailed breakdown of leading commercial and hosted REST/HTTP API cli
 
 ## 💻 Open-Source Software
 
-Curated open-source REST & HTTP API clients, ordered descending by community popularity (**GitHub Star Counts** ⭐).
+Curated open-source REST & HTTP API clients, ordered descending by community popularity (**GitHub Stars_Counts** ⭐).
 
 ### 1. Hoppscotch
 <a href="https://github.com/hoppscotch/hoppscotch/stargazers"><img src="https://img.shields.io/github/stars/hoppscotch/hoppscotch?style=social&color=white" alt="Hoppscotch Stars"/></a>
@@ -196,7 +196,7 @@ Curated open-source REST & HTTP API clients, ordered descending by community pop
 
 ## 📊 Feature Matrix & Comparison at a Glance
 
-| Client | Type | Community Stars | Supported Protocols | Offline-First | Git-Native | Best Use Case |
+| Client | Type | Community GitHub_Stars | Supported Protocols | Offline-First | Git-Native | Best Use Case |
 | :--- | :--- | :--- | :--- | :---: | :---: | :--- |
 | **Hoppscotch** | Open-Source | ~80.8k ⭐ | REST, GraphQL, WS, SSE, MQTT | ⚠️ Partial | ❌ Cloud/Self-Host | Multi-protocol browser & web app testing |
 | **Bruno** | Open-Source | ~48.4k ⭐ | REST, GraphQL, gRPC, WS, SOAP | ✅ Yes | ✅ 100% Files | Git-versioned collections & offline safety |
